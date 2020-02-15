@@ -279,6 +279,7 @@ strong {
       background-image: url("../images/blueskyshuttle-header-bcg-1000.jpg");
       background-position: center; } }
   .r-header__inner {
+    position: relative;
     min-height: 47rem;
     padding: 2rem 0;
     display: grid;
@@ -308,8 +309,8 @@ strong {
       .r-header__phone {
         display: none; } }
   .r-header__menu {
-    grid-area: menu;
-    justify-self: end; }
+    position: fixed;
+    right: 3rem; }
     @media screen and (min-width: 62.5em) {
       .r-header__menu {
         display: none; } }

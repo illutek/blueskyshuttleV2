@@ -20,6 +20,7 @@
   }
 
   &__inner {
+    position: relative;
     min-height: 47rem;
     padding: 2rem 0;
     display: grid;
@@ -67,8 +68,11 @@
   }
 
   &__menu {
-    grid-area: menu;
-    justify-self: end;
+    // grid-area: menu;
+    // justify-self: end;
+    // customer wanted the menu fixed afterwards 
+    position: fixed;
+    right: 3rem;
 
     @include mq(desktop) {
       display: none;
