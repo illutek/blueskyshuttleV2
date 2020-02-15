@@ -1,0 +1,40 @@
+{#
+/**
+ * 2019-12-18
+ *
+ * header on the page, only difference with 
+ * the header on the front-page is an extra class "r-header__inner--no-height".
+ * and no services region
+ *
+ * @see template_preprocess_page()
+ * @see html.html.twig
+ */
+#}
+
+{# start region contact-overlay #}
+{% include directory ~ '/templates/partials/shared/contact-overlay.html.twig' %}
+{# end region contact-overlay #}
+
+{# start region menu-overlay #}
+{% include directory ~ '/templates/partials/shared/menu-overlay.html.twig' %}
+{# end region menu-overlay #}
+
+{# start region top-header #}
+{% include directory ~ '/templates/partials/shared/top-header.html.twig' %}
+{# end region top-header #}
+
+{# start region header #}
+{% include directory ~ '/templates/partials/header-page.html.twig' %}
+{# end region header #}
+
+{# start region main-content #}
+{% include directory ~ '/templates/partials/shared/main-content.html.twig' %}
+{# end region main-content #}
+
+{# start region footer #}
+{% include directory ~ '/templates/partials/shared/footer.html.twig' %}
+{# end region footer #}
+
+{# start region sub-footer #}
+{% include directory ~ '/templates/partials/shared/sub-footer.html.twig' %}
+{# end region sub-footer #}

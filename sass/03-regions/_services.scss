@@ -1,0 +1,28 @@
+// /////////////////////////
+// @@ SERVICES REGION
+// ////////////////////////
+
+// region services, the service = content
+// r-services on partials/front-page/services.html.twig
+// r-services__inner on views-view--services.html.twig
+
+.r-services {
+    margin-bottom: $margin-bb;
+
+    &__title {
+        text-align: center;
+        margin-bottom: $margin-bb;
+    }
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+
+        @include mq(tablet) {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+    }
+
+}

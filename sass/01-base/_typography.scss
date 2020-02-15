@@ -1,0 +1,62 @@
+// /////////////////////////
+// @@ TYPOGRAPHY
+// ////////////////////////
+
+html {
+    font-family: $ff-sans;
+  }
+  
+  body {
+    font-size: $ff-size;
+    line-height: 2rem;
+  }
+  
+  h1, h2, h3, h4 {
+    font-weight: $fw-bold;
+  }
+  
+  h1 {
+    position: relative;
+    display: inline-block;
+    font-size: 7vw;  
+    line-height: 100%;
+    margin-bottom: $margin-b;
+
+    @include underline($accent);
+    
+    @include mq(desktop) {
+      font-size: 3vw; 
+    }
+    
+  }
+  
+
+  h2 {
+    position: relative;
+    display: inline-block;
+    font: {
+      size: calc(#{$ff-size} + 1rem);  //26rem
+    }
+    margin-bottom: 3rem;
+    line-height: 3rem;
+
+    @include underline($accent);
+    
+  }
+  
+  h3 {
+    position: relative;
+    display: inline-block;
+    font: {
+      size: calc(#{$ff-size} + .8rem);
+    }
+    margin-bottom: 1rem;
+
+    @include underline($accent);
+  }
+  
+  strong {
+    font: {
+      weight: $fw-bold;
+    }
+  }

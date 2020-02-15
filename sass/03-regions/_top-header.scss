@@ -1,0 +1,46 @@
+// /////////////////////////
+// @@ TOP-HEADER
+// ////////////////////////
+
+.r-top-header {
+    background-color: $main;
+    color: $white;
+    padding: 1.5rem 0;
+    height: 7.5rem;
+    font: {
+        size: 2.4rem;
+    };
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__left {
+        max-width: 13rem;
+
+        @include mq(desktop) {
+            order: 1;
+        }
+    }
+
+    &__middle {
+        display: none;
+
+        @include mq(desktop) {
+            order: 0;
+            display: block;
+        }
+    }
+
+    &__right {
+        max-width: 20rem;
+        display: flex;
+
+        @include mq(desktop) {
+            order: 2;
+        }
+
+    }
+}

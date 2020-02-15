@@ -1,0 +1,24 @@
+name: bleuskyshuttleV2
+type: theme
+discription: "BlueSkyShuttle theme for John"
+base theme: classy
+package: Custom
+core: 8.x
+version: 2.0.0
+
+libraries:
+  - blueskyshuttleV2/globalstyle
+  - blueskyshuttleV2/fonts
+  - blueskyshuttleV2/mobile
+
+regions:
+  contactoverlay: "Contact overlay"
+  mobilemenu: "Mobiel menu"
+  headermenu: "Header Menu"
+  languageselector: "Language selector"
+  header: Header
+  content: Content
+  services: Services
+  footerleft: "Footer left"
+  footerright: "Footer right"
+  subfooter: "Sub Footer"

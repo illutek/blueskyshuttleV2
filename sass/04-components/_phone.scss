@@ -1,0 +1,31 @@
+// //////////////////////////////
+// @@ PHONE BUTTON 
+// //////////////////////////////
+.c-phone {
+    background-color: $accent;
+    padding: 1rem 2rem;
+    margin-top: -2rem;
+
+    &__link {
+        text-decoration: none;
+
+        &--black {
+            color: $black;
+        }
+
+        &--white {
+            color: $white;
+        }
+    }
+
+    &--overlay {
+        border: 1px solid $black;
+        text-decoration: none;
+        color: $black;
+        display: block;
+        margin-top: 3rem;
+        text-align: center;
+
+    }
+
+}

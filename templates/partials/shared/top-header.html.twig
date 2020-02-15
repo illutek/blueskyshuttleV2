@@ -1,0 +1,27 @@
+{#
+/**
+ * 2019-12-20
+ *
+ * top-header region
+ */
+#}
+
+<div class="r-top-header">
+    <div class="container">
+        <div class="r-top-header__inner">
+            <div class="r-top-header__left">
+                <a href="{{ path('<front>') }}">
+                    <img src="{{ base_path ~ directory }}/images/logo.png" alt="Blueskyshuttle logo">
+                </a>   
+            </div>
+            <div class="r-top-header__middle">
+                <div class="c-top-header-menu">
+                    {{ page.headermenu }}
+                </div>
+            </div>
+            <div class="r-top-header__right">
+                {{ page.languageselector }}
+            </div>
+        </div>
+    </div>
+</div>

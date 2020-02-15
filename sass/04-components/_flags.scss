@@ -1,0 +1,20 @@
+// //////////////////////////////
+// @@ LANGUAGE FLAGS
+// //////////////////////////////
+
+.c-language {
+
+    &__items {
+        display: flex;
+        width: 9rem;
+        justify-content: space-between;
+    }
+}
+
+.en {
+    @include flags('eng-flag.jpg', 'eng-flag-not_active.jpg')
+}
+
+.nl {
+    @include flags('dutch-flag.jpg', 'dutch-flag-not_active.jpg')
+}
